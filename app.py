@@ -47,6 +47,7 @@ def realizar_pesquisa(pergunta):
     if (pergunta.lower()!='nada' and escolha_opcao == False):
         termo_pesquisado = pergunta
         try:
+            (wikipedia.summary(termo_pesquisado))
             pesquisar = False
             return str((wikipedia.summary(termo_pesquisado)))
         except:
